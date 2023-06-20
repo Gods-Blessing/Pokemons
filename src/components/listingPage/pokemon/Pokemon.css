@@ -1,0 +1,43 @@
+.individual-pokemon-container > a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon-image{
+    height: 28vh;
+    aspect-ratio: 1;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5px 5px;
+    margin-bottom: -4px;
+}
+
+.pokemon-name{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 5px;
+    border-radius: 0px 0px 10px 10px;
+    font-weight: 700;
+}
+
+.pokemon-name::first-letter{
+    text-transform: capitalize;
+}
+
+.pokemon-container-mark{
+    position: relative;
+}
+
+.bookmark{
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    z-index: 1;
+}
+
+.bookmark:hover{
+    /* transform: scale(1.2) ; */
+    cursor: pointer;
+}

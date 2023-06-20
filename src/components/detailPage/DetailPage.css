@@ -1,0 +1,114 @@
+.detail-main-container{
+    padding: 5vh 3vw;
+}
+
+.detail-main-container > h1{
+    text-align: center;
+    padding: 1.2em 0px;
+}
+
+.detail-container{
+    display: flex;
+    gap: 5vw;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.pokemon-detail-name{
+    text-decoration: underline;
+}
+
+.species-name::first-letter{
+    text-transform: capitalize;
+}
+
+.pokemon-detail-name::first-letter{
+    text-transform: capitalize;
+}
+
+.detail-image{
+    width: 30vw;
+    aspect-ratio: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5em 2em;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+}
+
+.poki-detail{
+    display: flex;
+    gap: 1.5em;
+    margin: 20px 0px 20px 0px;
+}
+
+.poki-detail > b{
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.poki-detail-2{
+    font-weight: 600;
+}
+
+
+.attack-types{
+    display: flex;
+    gap: 1.5em;
+    margin: 20px 0px;
+}
+
+.attack-types > b{
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.detail-list > li{
+    font-weight: 600;
+    padding: 0px 10px 10px 10px;
+}
+
+.detail-list > li::first-letter{
+    text-transform: capitalize;
+}
+
+.chart{
+    border-left: 1px solid black;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-mark{
+    right: 30px;
+    width: 30px;
+}
+
+
+@media screen and (max-width:600px) {
+    .detail-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .detail-mark{
+        width: 20px;
+    }
+
+    .detail-image{
+        width: 50vw;
+    }
+
+    .detail-main-container > h1{
+        padding: 0.3em 0px;
+    }
+
+    .pokemon-detail-name{
+        text-align: center;
+    }
+
+    .chart{
+        border-left: none;
+    }
+}
